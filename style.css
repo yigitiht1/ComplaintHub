@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #111;
+}
+
+
+.topbar {
+    background: #2563eb;
+    padding: 14px 0;
+    color: white;
+}
+
+.topbar-inner {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    align-items: center;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 8px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+.search-bar button {
+    background: #1e40af;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.admin-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ===== FORM ===== */
+.form-grid {
+    display: grid;
+    gap: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.primary {
+    background: #2563eb;
+    color: white;
+}
+
+button.primary:hover {
+    background: #1e40af;
+}
+
+button.danger {
+    background: #dc2626;
+    color: white;
+}
+
+button.danger:hover {
+    background: #b91c1c;
+}
+
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card strong {
+    font-size: 16px;
+}
+
+.card em {
+    color: #555;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #2563eb;
+    margin-right: 6px;
+}
+
+.pagination a.active {
+    background: #2563eb;
+    color: white;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 10px;
+}
